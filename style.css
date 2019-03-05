@@ -165,18 +165,19 @@ aside {
 }
 #project1{
   float: left;
-  width: 31%;
+  width: 40%;
   height: 20%;
   font-size: 4vmin;
-
+  margin-left: 5%;
 }
 #project2{
   float: right;
   text-align: center;
   padding-right: 1%;
-  width: 31%;
+  width: 40%;
   height: 20%;
   font-size: 4vmin;
+  margin-right: 5%;
 }
 #project3{
   float: right;
