@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 body {
   margin: 0px;
   font-family: 'Source Code Pro', monospace;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
 }
 
 img {
@@ -28,6 +34,9 @@ img {
   min-width: 100vh;
   min-height: 100vh;
   background-color: #2DABDA;
+  background-image: url('img/contact_background6.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #intro-text {
@@ -38,8 +47,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 100%;
-  border: 2px solid White;
-  padding: 5%;
+  padding: 15%;
   border-radius: 1px;
   margin-top: 25px;
   font-size: 21px;
@@ -83,147 +91,176 @@ img {
 }
 
 .inner-wrapper {
-  float: left;
-  width: 100%;
+  width: 100vw;
   background-color: #F0FFF0;
   color: #2DABDA;
   min-height: 80vh;
   font-size: 4vmin;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
+  border-top: solid thick cyan;
 }
+
 
 .section-title {
   text-align: center;
   color: #0067c5;
-  padding-top: 5%;
+
 }
 
-article {
-  float: left;
+#tools-section{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tools-image{
+  height: 300px;
+}
+
+.tools{
+  width: 45%;
   margin: 0 auto;
-  width: 49%;
-  height: 20%;
-  font-size: 4vmin;
-  color: #0c0c0c;
-}
-
-#design {
-  margin-top: 1%;
+  margin-bottom: 15px;
+  padding: 15px;
   text-align: center;
+  display: inline-block;
 }
 
-aside {
-  float: right;
-  margin: 0 auto;
-  width: 49%;
-  height: 20% font-size: 4vmin;
-  color: #0c0c0c;
-}
+#tools-web{
 
-#devices {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-#tablet2 {
-  text-align: center;
-  margin-top: 1%;
-}
-
-#jsstack {
-  text-align: center;
-  margin-top: 1%;
-}
-
-#stack {
-  background-color: White;
-  text-align: center;
 }
 
 .inner-wrapper-2 {
-  min-height: 80vh;
+  min-height: 100vh;
   font-size: 4vmin;
-  float: left;
+  display: inline-block;
   width: 100%;
-  margin: 0 auto;
-  background-color: #2DABDA;
+  background-color:#2a2929;
   text-align: center;
   color: White;
+
 }
 
 #portfolio-title {
   color: #F0FFF0;
+  border: solid 2px White;
+  width: 20%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: .9rem;
+}
+
+#projects-container{
+  width: 1000px;
+  min-height: 350px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 .project{
-  margin: 1%;
-  color: White;
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 300px;
+  border: solid 5px White;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
 }
+.project:hover{
+  border: solid 5px Black;
+}
+
 #project1{
-  float: left;
-  width: 40%;
-  height: 20%;
-  font-size: 4vmin;
-  margin-left: 5%;
+  background-image: url('img/french-app.png');
 }
+
 #project2{
-  float: right;
-  text-align: center;
-  padding-right: 1%;
-  width: 40%;
-  height: 20%;
-  font-size: 4vmin;
-  margin-right: 5%;
+  background-image: url('img/chat-app.png');
 }
+
 #project3{
-  float: right;
-  width: 31%;
-  height: 20%;
-  font-size: 4vmin;
+  background-image: url('img/hotel-app.png');
+
 }
+
+.details-border{
+  border: solid thin White;
+}
+
+.project-details{
+  width: 70%;
+  height: 110px;
+  opacity: 0;
+  border: solid 4px Black;
+  transition: all 0.6s ease-in-out;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: White;
+  background: #2a2929;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-details:hover{
+  opacity: .8;
+
+}
+
 
 /**---End Portfolio Section--**/
 
 /*------- Start Footer ---*/
 
-#contact-container {
-  min-height: 80vh;
-  font-size: 4vmin;
-  float: left;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 5%;
-  background-color: #0c0c0c;
-  text-align: center;
-  color: #0067c5;
-}
-
-.contact-info {
+#contact-container{
+  width: 100vw;
+  background: #40E0D0;
+  background-image: url('img/contact_background3.jpg');
   text-align: center;
   color: White;
-  background: #2DABDA;
-  font-size: 4vmin;
-  width: 50vw;
-  margin: auto;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  border: solid thin white;
-  padding: 2%;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
 }
 
-.contact-info a {
-  text-decoration: none;
+#contact-title{
+  font-size: 5.3rem;
+  padding: 15px;
+}
+
+#contact-link{
+  padding: 15px;
+  margin: 15px;
+  width: 35%;
+  margin: auto;
+}
+
+.link{
+    text-decoration: none;
+    color: #f501d0;
+    font-size: 1.5rem;
+    font-family: "Dosis", sans-serif;
+}
+
+#github{
   color: White;
+  padding: 30px;
 }
 
-.contact-info p {
-  text-align: center;
-  margin: auto;
-  padding-top: 5%;
+#github-link{
+  color: White;
 }
 
 @media screen and (max-width: 768px) {
@@ -232,41 +269,79 @@ aside {
     border: none;
     text-align: center;
   }
-  article {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: #0c0c0c;
-  }
-  aside {
-    width: 100%;
-    height: auto;
-  }
-  #devices {
-    width: 100%;
-  }
-  #stack {
-    display: none;
-    background-color: #00dbdb;
-    border-bottom: solid thin Black;
-  }
+
   .inner-wrapper-2{
     width: 100%;
-
+    margin: 0 auto;
+    max-width: 1000px;
+    display: inline-block;
   }
-    #project1{
-      width: 100%;
-      margin: 0;
-    }
-    #project2{
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-    #project3{
-      width: 100%;
-      margin: 0;
-    }
+
+  .tools{
+    padding-top: 0px;
+  }
+
+  #portfolio-title {
+    width: 50%;
+  }
+
+  #projects-container{
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.project{
+    min-width: 200px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 300px;
+    border: none;
+}
+
+.project-details{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  padding: 10px;
+  padding-top: 30px;
+  color: White;
+  background: #2a2929;
+  font-size: 1.3rem;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.project:hover{
+  border: none;
+}
+
+#contact-container{
+  margin: 0 auto;
+}
+
+#contact-title{
+  padding-top: 30px;
+  font-size: 1.5rem;
+}
+
+#contact-link{
+padding: 0px;
+margin: 0px;
+width: 50%;
+margin: auto;
+}
+.link{
+  font-size: 1rem;
+  text-align: center;
+  background: Black;
+}
 .contact-info{
   font-size: 3vmin;
 }
