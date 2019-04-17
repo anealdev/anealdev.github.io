@@ -33,7 +33,7 @@ img {
 .banner {
   min-width: 100vh;
   min-height: 100vh;
-  background-color: #2DABDA;
+  background-color: Black;
   background-image: url('img/contact_background6.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -98,7 +98,7 @@ img {
   font-size: 4vmin;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
-  border-top: solid thick cyan;
+  border-top: solid thick #40e0d0;
 }
 
 
@@ -154,9 +154,10 @@ img {
 }
 
 #projects-container{
-  width: 1000px;
+  width: 100%;
   min-height: 350px;
   margin: 0 auto;
+  margin-top: 30px;
   display: flex;
   padding-top: 30px;
   justify-content: center;
@@ -198,7 +199,7 @@ img {
 
 .project-details{
   width: 70%;
-  height: 110px;
+  height: 120px;
   opacity: 0;
   border: solid 4px Black;
   transition: all 0.6s ease-in-out;
@@ -263,7 +264,7 @@ img {
   color: White;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   .inner-text {
     width: 100%;
     border: none;
@@ -289,6 +290,8 @@ img {
     width: 90%;
     flex-direction: column;
     justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
   }
 
 .project{
@@ -305,7 +308,7 @@ img {
 
 .project-details{
   width: 150px;
-  height: 150px;
+  height: 200px;
   opacity: 0;
   padding: 10px;
   padding-top: 30px;
